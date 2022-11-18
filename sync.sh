@@ -56,7 +56,7 @@ total=${#images[@]}
 for img in ${images[@]}; do
     index=$((index + 1))
     echo "[${index}/${total}] processing $img ... "
-    echo MAX_SLEEP_SECS=10 MAX_TIMES=3 NEW_BASE=yunion push_images $img
+    MAX_SLEEP_SECS=10 MAX_TIMES=3 NEW_BASE=yunion push_images $img
 done
 
 error_count=${#error_images[@]}
