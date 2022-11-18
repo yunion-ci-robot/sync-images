@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -ex ;export PS4='+[$(TZ="Asia/Shanghai" date "+%Y-%m-%d %T.%3N")](${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
+set -ex ;export PS4='+[$(TZ="Asia/Shanghai" date "+%Y-%m-%d %T.%3N")](${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 
 local_vs=versions.json
 
