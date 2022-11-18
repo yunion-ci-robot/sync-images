@@ -45,11 +45,13 @@ push_images(){
         fi
         sleep ${MAX_SLEEP_SECS:-3}
     done
-    echo "[ERROR] push image $image to $new_base failed. "
     error_images+=(
         $image
     )
+    echo "[ERROR] push image $image to $new_base failed. "
+    echo "[ERROR] failed ${#error_images[@]} images: ${error_images[@]}"
 }
+
 index=0
 echo ""
 total=${#images[@]}
@@ -62,7 +64,7 @@ done
 error_count=${#error_images[@]}
 if [[ "$error_count" -gt 0 ]]; then
     echo "ERROR pushing images:"
-    echo ${error_count[@]}
+    echo "[ERROR] failed $error_count images: ${error_images[@]}"
     exit 1
 else
     echo "All done and all good."
