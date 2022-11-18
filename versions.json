@@ -1,0 +1,204 @@
+{
+    "copyright": {
+        "brand": "Yunion Cloud",
+        "channel": "default",
+        "copyright": "\u5317\u4eac\u4e91\u8054\u58f9\u4e91\u6280\u672f\u6709\u9650\u516c\u53f8",
+        "docs": "",
+        "email": "info@yunion.cn",
+        "license": "https://cloud.yunion.cn/account/license",
+        "sysname": "\u4e91\u8054\u58f9\u4e91"
+    },
+    "date": "2022-11-17 14:15:28",
+    "dist": "3.9",
+    "dockers": {
+        "ansibleserver": "v3.9.5-20221117.0",
+        "apigateway": "v3.9.5-20221117.0",
+        "apigateway-ee": "v3.9.5-20221117.0",
+        "autoupdate": "v3.9.5-20221117.0",
+        "baremetal-agent": "v3.9.5-20221117.0",
+        "busybox": "1.28.0-glibc",
+        "calico-cni": "v3.12.1",
+        "calico-kube-controllers": "v3.12.1",
+        "calico-node": "v3.12.1",
+        "climc": "v3.9.5-20221117.0",
+        "climc-ee": "v3.9.5-20221117.0",
+        "cloudevent": "v3.9.5-20221117.0",
+        "cloudid": "v3.9.5-20221117.0",
+        "cloudmon": "v3.9.5-20221117.0",
+        "cloudnet": "v3.9.5-20221117.0",
+        "cloudproxy": "v3.9.5-20221117.0",
+        "coredns": "1.3.1",
+        "csi-attacher": "v2.0.0",
+        "csi-node-driver-registrar": "v1.2.0",
+        "csi-provisioner": "v1.4.0",
+        "dashboard-overview": "v3.9.5-20221117.0",
+        "devtool": "v3.9.5-20221117.0",
+        "docs-ee": "v3.9.5-20221117.0",
+        "esxi-agent": "v3.9.5-20221117.0",
+        "etcd": "3.4.6",
+        "glance": "v3.9.5-20221117.0",
+        "grafana": "6.7.1",
+        "host": "v3.9.5-20221117.0",
+        "host-deployer": "v3.9.5-20221117.0",
+        "host-image": "v1.0.5",
+        "influxdb": "1.7.7",
+        "itsm": "v3.9.5-20221117.0",
+        "k8s-sidecar": "1.12.2",
+        "keepalived": "v2.0.25",
+        "keystone": "v3.9.5-20221117.0",
+        "kube-apiserver": "v1.15.8",
+        "kube-controller-manager": "v1.15.8",
+        "kube-proxy": "v1.15.8",
+        "kube-rbac-proxy": "v0.5.0",
+        "kube-scheduler": "v1.15.8",
+        "kube-state-metrics": "v1.9.8",
+        "kubeserver": "v3.9.5-20221117.0",
+        "local-path-provisioner": "v0.0.11",
+        "logger": "v3.9.5-20221117.0",
+        "loki": "2.2.1",
+        "meter": "v3.9.5-20221117.0",
+        "metrics-server": "v0.3.6",
+        "minio": "RELEASE.2021-06-17T00-10-46Z",
+        "monitor": "v3.9.5-20221117.0",
+        "notify": "v3.9.5-20221117.0",
+        "notify-plugins": "v3.9.5-20221117.0",
+        "onecloud-operator": "v3.9.5-20221117.0",
+        "onecloud-service-operator": "v3.9.5-20221117.0",
+        "openvswitch": "2.10.5-1",
+        "pause": "3.1",
+        "prometheus-operator": "v0.37.0",
+        "promtail": "2.2.1",
+        "region": "v3.9.5-20221117.0",
+        "region-dns": "v3.9.5-20221117.0",
+        "report": "v3.9.5-20221117.0",
+        "s3gateway": "v3.9.5-20221117.0",
+        "scheduledtask": "v3.9.5-20221117.0",
+        "scheduler": "v3.9.5-20221117.0",
+        "sdnagent": "v3.9.5-20221117.0",
+        "suggestion": "v3.9.5-20221117.0",
+        "telegraf": "release-1.19.2-0",
+        "telegraf-init": "release-1.19.2-0",
+        "telegraf-raid-plugin": "release-1.6.4",
+        "traefik": "v1.7.34",
+        "vpcagent": "v3.9.5-20221117.0",
+        "web": "v3.9.5-20221117.0",
+        "web-ee": "v3.9.5-20221117.0",
+        "webconsole": "v3.9.5-20221117.0",
+        "yunionagent": "v3.9.5-20221117.0",
+        "yunionconf": "v3.9.5-20221117.0"
+    },
+    "registry": "yunionio",
+    "repos": [
+        {
+            "branch": "release/3.9",
+            "commit": "7beb527",
+            "repo": "dashboard-overview"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "7a5b1dc",
+            "repo": "dashboard-saas"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "f20522135",
+            "repo": "dashboard-ce"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "7af5c57f",
+            "repo": "yunionsetup"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "585d5c2",
+            "repo": "onecloud-service-operator"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "cd24597",
+            "repo": "ocboot"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "33c59ab",
+            "repo": "itsm"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "a515ce9e",
+            "repo": "ocadm"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "993b73f",
+            "repo": "web-console"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "2d906b6d",
+            "repo": "dashboard-ee"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "ed34c81",
+            "repo": "notifyplugins"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "2b715e32",
+            "components": [
+                "yunionagent"
+            ],
+            "repo": "onecloud-ee"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "0214a644",
+            "repo": "onecloud-operator"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "b78130eb",
+            "components": [
+                "autoupdate",
+                "climc-ee",
+                "meter",
+                "report",
+                "suggestion",
+                "yunionapi"
+            ],
+            "repo": "cloudpods-ee"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "b77bc597",
+            "repo": "sdnagent"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "b2a51d3b21",
+            "components": [
+                "climc",
+                "lbagent"
+            ],
+            "repo": "onecloud"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "8679376d",
+            "repo": "docs"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "65d136e",
+            "repo": "kubecomps"
+        },
+        {
+            "branch": "release/3.9",
+            "commit": "f20522135",
+            "repo": "dashboard-ce"
+        }
+    ],
+    "version": "release/3.9.5-20221117.0"
+}
