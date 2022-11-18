@@ -1,0 +1,13 @@
+name: Sync images
+run-name: sync images
+on: [push]
+jobs:
+  Sync-Images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/setup-buildx-action@v1
+      - uses: actions/checkout@v3
+      - name: test sync images
+        run: |
+          docker login --username="yunion" --password ${{secrets.O_ALI_REG_PASS}}
+          ./sync.sh

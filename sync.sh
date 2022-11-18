@@ -6,7 +6,7 @@ local_vs=versions.json
 
 if [ ! -f "$local_vs" ]; then
     echo "no version file! "
-    exit 1
+    exit 0
 fi
 
 images=(
