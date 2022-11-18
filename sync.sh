@@ -10,7 +10,7 @@ if [ ! -f "$local_vs" ]; then
 fi
 
 images=(
-    $(cat $local_vs |jq  '.dockers |to_entries[] |.key +":"+ .value' )
+    $(cat $local_vs |jq  '.dockers |to_entries[] |.key +":"+ .value' |xargs )
 )
 
 error_images=()
