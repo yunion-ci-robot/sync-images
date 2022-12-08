@@ -38,7 +38,10 @@ push_images(){
             docker tag      ${old_image} ${new_image}-amd64 && \
             docker push     ${new_image}-amd64 && \
             docker manifest create ${args[@]} ${new_image} ${new_image}-amd64 ${new_image}-arm64 && \
-            docker manifest inspect ${new_image} &>/dev/null && \
+            docker manifest annotate ${new_image} --os linux --arch amd64 ${new_image}-amd64 && \
+            docker manifest annotate ${new_image} --os linux --arch arm64 ${new_image}-arm64 && \
+            docker manifest inspect  ${new_image} | grep -wq amd64 && \
+            docker manifest inspect  ${new_image} | grep -wq arm64 && \
             docker manifest push ${new_image}; then
             echo "[PASS] push image $image to $new_base OK. "
             return
