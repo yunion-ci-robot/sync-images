@@ -9,9 +9,19 @@ if [ ! -f "$local_vs" ]; then
     exit 0
 fi
 
-images=(
-    $(cat $local_vs |jq  '.dockers |to_entries[] |.key +":"+ .value' |xargs )
-)
+images(){
+    # cat $local_vs |jq  '.dockers |to_entries[] |.key +":"+ .value' | xargs
+    local ret=()
+    ret=(
+        $(cat $local_vs | jq  '.dockers | to_entries[] | .key +":"+ .value' )
+    )
+    if grep -wq extra_images $local_vs; then
+        ret+=(
+            $( cat $local_vs | jq  '.extra_images | to_entries[] | .key +":"+ .value' )
+        )
+    fi
+    echo "${ret[@]}" | tr -d '"'
+}
 
 error_images=()
 
