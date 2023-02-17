@@ -9,7 +9,7 @@ if [ ! -f "$local_vs" ]; then
     exit 0
 fi
 
-images(){
+get_images(){
     # cat $local_vs |jq  '.dockers |to_entries[] |.key +":"+ .value' | xargs
     local ret=()
     ret=(
@@ -22,6 +22,8 @@ images(){
     fi
     echo "${ret[@]}" | tr -d '"'
 }
+
+images=( $( get_images ) )
 
 error_images=()
 
