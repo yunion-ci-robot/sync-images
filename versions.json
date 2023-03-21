@@ -1,0 +1,223 @@
+{
+  "copyright": {
+    "brand": "Yunion Cloud",
+    "channel": "default",
+    "copyright": "\u5317\u4eac\u4e91\u8054\u58f9\u4e91\u6280\u672f\u6709\u9650\u516c\u53f8",
+    "docs": "",
+    "email": "info@yunion.cn",
+    "license": "https://cloud.yunion.cn/account/license",
+    "sysname": "\u4e91\u8054\u58f9\u4e91"
+  },
+  "date": "2023-03-21 15:10:58",
+  "dist": "3.10",
+  "dockers": {
+    "baremetal-agent": "v3.10.0-rc2",
+    "busybox": "1.28.0-glibc",
+    "calico-cni": "v3.12.1",
+    "calico-kube-controllers": "v3.12.1",
+    "calico-node": "v3.12.1",
+    "climc": "v3.10.0-rc2",
+    "climc-ee": "v3.10.0-rc2",
+    "cloudmon-ee": "v3.10.0-rc2",
+    "cloudnet": "v3.10.0-rc2",
+    "cloudpods-ee": "v3.10.0-rc2",
+    "cloudproxy": "v3.10.0-rc2",
+    "coredns": "1.3.1",
+    "dashboard-overview": "v3.10.0-rc2",
+    "docs-ee": "v3.10.0-rc2",
+    "etcd": "3.4.6",
+    "grafana": "6.7.1",
+    "host-deployer": "v3.10.0-rc2",
+    "host-health": "v0.0.1",
+    "host-image": "v1.0.5",
+    "influxdb": "1.7.7",
+    "itsm": "v3.10.0-rc2",
+    "k8s-sidecar": "1.12.2",
+    "keepalived": "v2.0.25",
+    "kube-apiserver": "v1.15.8",
+    "kube-controller-manager": "v1.15.8",
+    "kube-proxy": "v1.15.8",
+    "kube-scheduler": "v1.15.8",
+    "kube-state-metrics": "v1.9.8",
+    "kubeserver": "v3.10.0-rc2",
+    "local-path-provisioner": "v0.0.11",
+    "loki": "2.2.1",
+    "metrics-server": "v0.3.6",
+    "minio": "RELEASE.2021-06-17T00-10-46Z",
+    "onecloud-operator": "v3.10.0-rc2",
+    "onecloud-service-operator": "v3.10.0-rc2",
+    "openvswitch": "2.12.4-2",
+    "pause": "3.1",
+    "prometheus-operator": "v0.37.0",
+    "promtail": "2.2.1",
+    "region-dns": "v3.10.0-rc2",
+    "region-ee": "v3.10.0-rc2",
+    "s3gateway": "v3.10.0-rc2",
+    "telegraf": "release-1.19.2-2",
+    "telegraf-init": "release-1.19.2-0",
+    "telegraf-raid-plugin": "release-1.6.4",
+    "traefik": "v1.7.34",
+    "web": "v3.10.0-rc2",
+    "web-ee": "v3.10.0-rc2"
+  },
+  "registry": "yunion",
+  "repos": [
+    {
+      "branch": "release/3.10",
+      "commit": "7af5c57f",
+      "repo": "yunionsetup"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "1ed96f0",
+      "repo": "cloudmux-ee"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "aa85b1d",
+      "repo": "dashboard-saas"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "7057120",
+      "repo": "itsm"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "cd769e4",
+      "repo": "dashboard-overview"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "c1dd52f6",
+      "repo": "cloudmux"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "172690c8",
+      "repo": "dashboard-ee"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "e62b4e7",
+      "repo": "onecloud-service-operator"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "5b0911d",
+      "repo": "ocboot"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "a0e3d121",
+      "repo": "cloudpods-pack"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "c5667cad7",
+      "repo": "dashboard-ce"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "c5667cad7",
+      "repo": "dashboard-ce"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "7560d4a",
+      "repo": "notifyplugins"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "faaa3dc9",
+      "repo": "ocadm"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "4a74c5a",
+      "repo": "web-console"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "b205b930ce",
+      "components": [
+        "climc",
+        "lbagent"
+      ],
+      "repo": "onecloud"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "29517291",
+      "repo": "docs"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "1d71bd1",
+      "repo": "kubecomps"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "5ae21b8e",
+      "repo": "sdnagent"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "01b8be9a",
+      "repo": "onecloud-operator"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "d37bb535",
+      "components": [
+        "yunionagent"
+      ],
+      "repo": "onecloud-ee"
+    },
+    {
+      "branch": "release/3.10",
+      "commit": "750dfa39",
+      "components": [
+        "autoupdate",
+        "climc-ee",
+        "meter",
+        "report",
+        "suggestion",
+        "yunionapi",
+        "region-ee",
+        "cloudmon-ee"
+      ],
+      "repo": "cloudpods-ee"
+    }
+  ],
+  "version": "release/3.10.0-rc2",
+  "extra_images": {
+    "ansibleserver": "v3.10.0-rc2",
+    "apigateway": "v3.10.0-rc2",
+    "apigateway-ee": "v3.10.0-rc2",
+    "autoupdate": "v3.10.0-rc2",
+    "cloudevent": "v3.10.0-rc2",
+    "cloudid": "v3.10.0-rc2",
+    "cloudmon": "v3.10.0-rc2",
+    "devtool": "v3.10.0-rc2",
+    "esxi-agent": "v3.10.0-rc2",
+    "glance": "v3.10.0-rc2",
+    "host": "v3.10.0-rc2",
+    "keystone": "v3.10.0-rc2",
+    "lbagent": "v3.10.0-rc2",
+    "logger": "v3.10.0-rc2",
+    "meter": "v3.10.0-rc2",
+    "monitor": "v3.10.0-rc2",
+    "notify": "v3.10.0-rc2",
+    "region": "v3.10.0-rc2",
+    "report": "v3.10.0-rc2",
+    "scheduledtask": "v3.10.0-rc2",
+    "scheduler": "v3.10.0-rc2",
+    "sdnagent": "v3.10.0-rc2",
+    "suggestion": "v3.10.0-rc2",
+    "vpcagent": "v3.10.0-rc2",
+    "webconsole": "v3.10.0-rc2",
+    "yunionagent": "v3.10.0-rc2",
+    "yunionconf": "v3.10.0-rc2"
+  }
+}
